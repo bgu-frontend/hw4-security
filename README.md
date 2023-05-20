@@ -24,8 +24,8 @@ Required metadata: user, date uploaded, id of post (sqlite),  link to video (clo
 4. We will use cloudinary to serve the video files. 
 
 ### Front end components
-1.  automatic focus on the title text box in the create post page.
-2.  if a video exists, it should appear, in every page where the post content is shown. 
+1.  Automatic focus on the title text box in the create post page, instead of the current html tag, implement it yourself using an effect.
+2.  If a video exists, it should appear, in every page where the post content is shown. 
 
 ### Bonus: 0-10 points ("magen" for the exercises) for extra features:
 1. Implement a light/dark theme button for all frontent components (under "components" directory). See For example, https://react.dev/learn,  top right corner.
