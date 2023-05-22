@@ -3,7 +3,7 @@
 2. Grades: code part: 70%, questions: 30%.
 3. Your submitted git repo should be *private*, please make barashd@post.bgu.ac.il a collaborator.
 5. Deadline: 27/05/2023, end of day.
-6. Additionally, solve the questions in: (  link will be filled soon.).
+6. Additionally, solve the questions in [ex2 questions](https://docs.google.com/forms/d/1sGteR36gNbC9qhYE0inRXg1u6kSY5xxrp-z4VheNkXw/edit).
 7. To submit, fill in repository details in the following Moodle [link].(https://moodle.bgu.ac.il/moodle/mod/questionnaire/view.php?id=2466075).
 8. in Atlas: Set the allowed ip addresses to 'all' (0.0.0.0).
 9. Download the final version to a new dir and make sure it installs and runs correctly, preferably on a fresh machine.
