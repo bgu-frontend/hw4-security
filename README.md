@@ -17,7 +17,7 @@ this task's main goal about adding videos to our posts website, and is splitted 
 1. Reduce number of posts sent from backend to 10.  Read about api routes below.
 
 ### Video
-1. When a post is created/edited, there will be an option to upload exactly one video to the post, and to remove it. 
+1. When a post is created, there will be an option to upload exactly one video to the post, and to remove it. 
 2. If a video was uploaded, the user will see the filename, and won't be able to upload any more videos.
 3. The video metadata will be saved in mongoDB. 
 Required metadata: user, date uploaded, id of post (sqlite),  link to video (cloudinary). 
