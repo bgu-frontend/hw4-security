@@ -23,7 +23,7 @@ This task's main goal is to add profiles to our posts website; the task is split
 
 ## Prerequisite reading:
 1. Read about testing, user administration, and authentication at https://fullstackopen.com/en/part4/.
-2. Read about bcrypt format: https://en.wikipedia.org/wiki/Bcrypt and https://stackoverflow.com/questions/32918460/why-is-the-hash-generated-by-bcrypt-non-deterministic.
+2. Read about bcrypt format: https://en.wikipedia.org/wiki/Bcrypt.
 3. Read about JSON Web Token: https://jwt.io/introduction.
 
 ## Implementation - backend
