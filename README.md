@@ -1,5 +1,5 @@
 ## Submission: 
-1. Submission is in pairs, but it's better for practice if you start alone.a
+1. Submission is in pairs, but it's better for practice if you start alone.
 2. Grades: code part: 70%, questions: 30%.
 3. Your submitted git repo should be *private*, please make barashd@post.bgu.ac.il a collaborator.
 5. Deadline: 13/06/2023, end of day.
@@ -62,8 +62,8 @@ This task's main goal is to add profiles to our posts website; the task is split
 4. One comfortable way to write a single test is the "given-when-then" convention:
     1. given that a user is in the database, and a correct auth request is made, then success is expected.
     2. given an existing post id, a delete request is sent to /api/post/:id, then I expect the post to be returned.
-    3. A matter of taste: if "then" expects more than one result, separate each one to a different test, (at the cost of code duplication).
-        1. You can use tests API to reduce code duplication: with mutual beforeEach, afterEach, mutual 
+    3. A matter of taste: if "then" expects more than one result, separate each one to a different test, (at the cost of code duplication, but can use a mutual code block of beforeEach).
+        
 
 
 
@@ -84,16 +84,10 @@ This task's main goal is to add profiles to our posts website; the task is split
 
 ### Tips:
 1. Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-your-application/configuring/debugging), it's easy to install and use most of the time, but sometimes the breakpoints don't work.
-2. Use a 
-
-### Github 
-Like before, Hw2 will be submitted via Github: fill the group in the Moodle link.
 
 ### Grading process:
 1. Clone your submitted repo. 
-2. Run the starter scripts.
-3. Performance test against a large, no video database from hw1.
-4. Manually test the video feature and any extra features.
+2. Manually test the profiles features and the testing functions.
 
 ### Getting started- 
 See the previous homework instructions.
