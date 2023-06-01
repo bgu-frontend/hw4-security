@@ -7,6 +7,7 @@
 7. To submit, fill in repository details in the following Moodle [will be filled later].(https://moodle.bgu.ac.il/moodle/mod/questionnaire/view.php?id=2472729).
 8. in Atlas: Set the allowed IP addresses to 'all' (0.0.0.0).
 9. Download the final submitted version to a new dir and make sure it installs and runs correctly, preferably on a fresh machine.
+10. Start from your previous, hw2-video, submission.
 
 ## Goals
 1. enable all users, regardless if they have GitHub, to log in.
