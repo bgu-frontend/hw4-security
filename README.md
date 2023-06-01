@@ -10,7 +10,8 @@
 
 
 ## Task
-this task's main goal about adding videos to our posts website, and is splitted to data transfer from hw1, video part and front end part.
+This task's main goal is to add videos to our posts website; the task is splitted to data transfer from hw1, video part and front end part.
+
 ![overview](https://res.cloudinary.com/dqdivzl0r/image/upload/v1684134346/kk6grnofeqgawigeas9f.png)
 
 ### Data transfer
