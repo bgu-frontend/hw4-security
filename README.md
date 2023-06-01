@@ -10,16 +10,15 @@
 10. Start from your previous, hw2-video, submission.
 
 ## Goals
-1. enable all users, regardless if they have GitHub, to log in.
-2. support user management, for features that we might want in the future: friends, groups, private messages, etc.
-3. understanding how authorization works hands-on.
-4. practice Test-driven development.
+1. support user management with authentication hands-on.
+2. practice Test-driven development.
 
 ## Task
 This task's main goal is to add profiles to our posts website; the task is split to:
 1. user management: replace nextAuth with token auth from [fullstackopen part 4](https://fullstackopen.com/en/part4/user_administration).
+2. back end (see below): supporting routes, db and middleware.
 3. front end: profile page, sign up page, sign in page.
-4. testing: you have to submit 10 backend tests (See tips for TDD below)
+4. testing: you have to submit at least 10 backend tests, it's recommended to use test driven development. (See tips for TDD below)
 
 ## Prerequisite reading:
 1. Read about testing, user administration, and authentication at https://fullstackopen.com/en/part4/.
