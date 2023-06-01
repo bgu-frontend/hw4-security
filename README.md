@@ -28,19 +28,19 @@ This task's main goal is to add profiles to our posts website; the task is split
 
 ## Implementation - backend
 ### Library
-2. Remove the next-auth lib from the project. (** See what was added to support it here: https://next-auth.js.org/)
+Remove the next-auth lib from the project. (** See what was added to support it here: https://next-auth.js.org/)
 
 ### Database
-1. We need to store the password hashes. you're free to design the database schema as you wish. At least two possible options (you can come up with more):
-    1. the least changes would be to use the existing schemas to store passwords as well.
-    2. if you prefer working with Mongo, and be aligned with fullstackopen examples, you can change your code to store users and their passwords there.
+We need to store the password hashes. you're free to design the database schema as you wish. At least two possible options (you can come up with more):
+ 1. the least changes would be to use the existing schemas to store passwords as well.
+ 2. if you prefer working with Mongo, and be aligned with fullstackopen examples, you can change your code to store users and their passwords there.
     
 ### API routes
 1. implement a route that adds a new user.
 2. implement a login of an existing user.
 
 ### middleware
-1. Implement a middleware to verify a user is logged in, before reaching the post/publish/profile API endpoints.
+Implement a middleware to verify a user is logged in, before reaching the post/publish/profile API endpoints.
 
 
 ## Implementation - Front
@@ -65,7 +65,7 @@ This task's main goal is to add profiles to our posts website; the task is split
 3. Wherever there's a post shown, add the profile picture of the author.
 
 ### Tips - debugging:
-1. Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-your-application/configuring/debugging), it's easy to install and use most of the time, but sometimes the breakpoints don't work.
+Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-your-application/configuring/debugging), it's easy to install and use most of the time, but sometimes the breakpoints don't work.
 
 ### Tips - Test Driven Development ("Clean Code"/ Robert C. Martin, Chapter 9, unit tests)
 1. You're invited to take this exercise as an opportunity to practice TDD, which will make you a better programmer.
