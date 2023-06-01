@@ -21,15 +21,19 @@ This task's main goal is to add profiles to our posts website; the task is split
 3. front end: profile page, sign up page, sign in page.
 4. testing: you have to submit 10 backend tests (See tips for TDD below)
 
-## Implementation - backend
+## Prerequisite reading:
+1. Read about testing, user administration, and authentication at https://fullstackopen.com/en/part4/.
+2. Read about bcrypt format: https://en.wikipedia.org/wiki/Bcrypt and https://stackoverflow.com/questions/32918460/why-is-the-hash-generated-by-bcrypt-non-deterministic.
+3. Read about JSON Web Token: https://jwt.io/introduction.
 
+## Implementation - backend
 ### Library
 2. Remove the next-auth lib from the project. (** See what was added to support it here: https://next-auth.js.org/)
 
 ### Database
 1. We need to store the password hashes. you're free to design the database schema as you wish. At least two possible options (you can come up with more):
     1. the least changes would be to use the existing schemas to store passwords as well.
-    2. if you prefer working with Mongo, and be aligned with FSO examples, you can change your code to store users and their passwords there.
+    2. if you prefer working with Mongo, and be aligned with fullstackopen examples, you can change your code to store users and their passwords there.
     
 ### API routes
 1. implement a route that adds a new user.
@@ -40,7 +44,6 @@ This task's main goal is to add profiles to our posts website; the task is split
 
 
 ## Implementation - Front
-### Front-end components
 1. for unauthenticated users:
     1. create a "sign in" page: where a user can create an account.
     2. each user must have a username, password, email (unique identifier), and name. (Bonus: a photo, see below).
@@ -50,12 +53,19 @@ This task's main goal is to add profiles to our posts website; the task is split
     1. Clicking on it, shows a page with the details of the current user.
 3. for simplicity, the username, password, and email cannot be changed after user creation, and we don't support deletion.
 
-## Implementation - error handling:
+## Implementation - front&back end error handling:
 1. If a user inserted a bad input in the form, it should be verified in the front end.
 2. The backend should send proper status codes (200- ok, 204- success and no content, 201- created, 400 bad request, 403-forbidden, 404- doesn't exist, 500- internal server error, and others) and the frontend should show a proper message interpreting those.
     1. A user cannot create an existing other user's email address: this will return a bad request code.
-    2. A user must enter an email, it can be verified at the front end.
+    2. A user must enter an email, it can be verified at the front end.    
 
+### Bonus: up to 10 points ("magen" for the exercises) for extra features:
+1. Let the user add a profile picture. Save it to Cloudinary.
+2. Make the photo editable with a click, at the profile page.
+3. Wherever there's a post shown, add the profile picture of the author.
+
+### Tips - debugging:
+1. Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-your-application/configuring/debugging), it's easy to install and use most of the time, but sometimes the breakpoints don't work.
 
 ### Tips - Test Driven Development ("Clean Code"/ Robert C. Martin, Chapter 9, unit tests)
 1. You're invited to take this exercise as an opportunity to practice TDD, which will make you a better programmer.
@@ -71,27 +81,6 @@ This task's main goal is to add profiles to our posts website; the task is split
     2. given an existing post id, a delete request is sent to /api/post/:id, then I expect the post to be returned.
     3. A matter of taste: if "then" expects more than one result, separate each one to a different test, (at the cost of code duplication, but can use a mutual code block of beforeEach).
 
-        
-
-
-
-
-### Bonus: up to 10 points ("magen" for the exercises) for extra features:
-1. Let the user add a profile picture. Save it to Cloudinary.
-2. Make the photo editable with a click, at the profile page.
-3. Wherever there's a post shown, add the profile picture of the author.
-
-## Prerequisites
-
-### Client side: uploading a video file:
-1. Read about testing, user administration, and authentication at https://fullstackopen.com/en/part4/.
-2. Read about bcrypt format: https://en.wikipedia.org/wiki/Bcrypt and https://stackoverflow.com/questions/32918460/why-is-the-hash-generated-by-bcrypt-non-deterministic.
-3. Read about JSON Web Token: https://jwt.io/introduction.
-
-
-
-### Tips:
-1. Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-your-application/configuring/debugging), it's easy to install and use most of the time, but sometimes the breakpoints don't work.
 
 ### Grading process:
 1. Clone your submitted repo. 
