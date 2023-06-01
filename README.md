@@ -38,22 +38,28 @@ This task's main goal is to add profiles to our posts website; the task is split
 ### middleware
 1. Implement a middleware to verify a user is logged in, before reaching the post/publish/profile API endpoints.
 
-## Implementation - Front
 
+## Implementation - Front
 ### Front-end components
-1. create a "sign in" and "log in" page for unauthenticated users. They can still see the public feed. since we remove the next-auth lib, those will be the only available login options from now on.
-2. create a profile page for authenticated users. They can see the link to it on the main page of the app.
+1. for unauthenticated users:
+    1. create a "sign in" page: where a user can create an account.
+    2. each user must have a username, password, email (unique identifier), and name. (Bonus: a photo, see below).
+    3. create a  "log in" page with username/password.
+    4. unauthenticated users can still see the public feed.
+2. create a profile page for authenticated users. link: on the main page of the app.
     1. Clicking on it, shows a page with the details of the current user.
-3. each user must have a username, password, email, and name. optional input: age, profession, and address. the email is the unique identifier of the user. 
-4. you should verify the inputs and send status/error codes (200- ok, 204- success and no content, 201- created, 400 bad request, 403-forbidden, 404- doesn't exist, 500- internal server error, and others) from the backend. For example:
+3. for simplicity, the username, password, and email cannot be changed after user creation, and we don't support deletion.
+
+## Implementation - error handling:
+1. If a user inserted a bad input in the form, it should be verified in the front end.
+2. The backend should send proper status codes (200- ok, 204- success and no content, 201- created, 400 bad request, 403-forbidden, 404- doesn't exist, 500- internal server error, and others) and the frontend should show a proper message interpreting those.
     1. A user cannot create an existing other user's email address: this will return a bad request code.
     2. A user must enter an email, it can be verified at the front end.
-5. for simplicity, the username, password, and email cannot be changed after user creation.
-6. for this homework, we don't support user deletion.
 
 
-### Test Driven Development ("Clean Code"/ Robert C. Martin, Chapter 9, unit tests)
+### Tips - Test Driven Development ("Clean Code"/ Robert C. Martin, Chapter 9, unit tests)
 1. You're invited to take this exercise as an opportunity to practice TDD, which will make you a better programmer.
+    1. But you *have* to submit a set of tests, even if not using TDD.
 2. The three laws of TDD:
     1. You may not write production code until you have written a failing unit test.
     2. You may not write more of a unit test than is sufﬁcient to fail, and not compiling is failing.
@@ -64,6 +70,7 @@ This task's main goal is to add profiles to our posts website; the task is split
     1. given that a user is in the database, and a correct auth request is made, then success is expected.
     2. given an existing post id, a delete request is sent to /api/post/:id, then I expect the post to be returned.
     3. A matter of taste: if "then" expects more than one result, separate each one to a different test, (at the cost of code duplication, but can use a mutual code block of beforeEach).
+
         
 
 
@@ -88,7 +95,7 @@ This task's main goal is to add profiles to our posts website; the task is split
 
 ### Grading process:
 1. Clone your submitted repo. 
-2. Manually test the profiles features and the testing functions.
+2. Manually test the profile features and the testing functions.
 
 ### Getting started- 
 See the previous homework instructions.
