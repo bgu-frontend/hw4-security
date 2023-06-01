@@ -54,7 +54,7 @@ Implement a middleware to verify a user is logged in, before reaching the post/p
 
 ## Implementation - front&back end error handling:
 1. If a user inserted a bad input in the form, it should be verified in the front end.
-2. The backend should send proper status codes (200- ok, 204- success and no content, 201- created, 400 bad request, 403-forbidden, 404- doesn't exist, 500- internal server error, and others) and the frontend should show a proper message interpreting those.
+2. The backend should send proper status codes (200- ok, 204- success and no content, 201- created, 400 bad request, 403-forbidden, 404- doesn't exist, 500- internal server error, and others) and the frontend should show a proper message interpreting those. For example:
     1. A user cannot create an existing other user's email address: this will return a bad request code.
     2. A user must enter an email, it can be verified at the front end.    
 
