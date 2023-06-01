@@ -58,7 +58,7 @@ Implement a middleware to verify a user is logged in, before reaching the post/p
     1. A user cannot create an existing other user's email address: this will return a bad request code.
     2. A user must enter an email, it can be verified at the front end.    
 
-### Bonus: up to 10 points ("magen" for the exercises) for extra features:
+### Bonus: up to 5 points ("magen" for the exercises) for extra features:
 1. Let the user add a profile picture. Save it to Cloudinary.
 2. Make the photo editable with a click, at the profile page.
 3. Wherever there's a post shown, add the profile picture of the author.
