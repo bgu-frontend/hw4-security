@@ -1,5 +1,5 @@
 ## Submission: 
-1. Submission is in pairs, but it's better for practice if you start alone.
+1. Submission is in pairs, but it's better for practice if you start alone.a
 2. Grades: code part: 70%, questions: 30%.
 3. Your submitted git repo should be *private*, please make barashd@post.bgu.ac.il a collaborator.
 5. Deadline: 13/06/2023, end of day.
