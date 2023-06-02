@@ -4,21 +4,21 @@
 3. Your submitted git repo should be *private*, please make barashd@post.bgu.ac.il a collaborator.
 5. Deadline: 13/06/2023, end of day.
 6. Additionally, solve the questions in [will be filled later](https://www.notexists.bgu.ac.il/).
-7. To submit, fill in repository details in the following Moodle [will be filled later].(https://moodle.bgu.ac.il/moodle/mod/questionnaire/view.php?id=2472729).
+7. To submit, fill in repository details in the following Moodle (https://moodle.bgu.ac.il/moodle/mod/questionnaire/view.php?id=2472729).
 8. in Atlas: Set the allowed IP addresses to 'all' (0.0.0.0).
 9. Download the final submitted version to a new dir and make sure it installs and runs correctly, preferably on a fresh machine.
 10. Start from your previous, hw2-video, submission.
 
 ## Goals
-1. support user management with authentication hands-on.
-2. practice backend testing, it's recommended to use test driven development. (See tips for TDD below)
+1. support user management with authentication.
+2. practice backend testing, it's recommended to use test driven development; see tips for TDD below.
 
 ## Task
 This task's main goal is to add profiles to our posts website; the task is split to:
 1. user management: replace nextAuth with token auth from [fullstackopen part 4](https://fullstackopen.com/en/part4/user_administration).
-2. back end (see below): supporting routes, db and middleware.
-3. front end: profile page, sign up page, sign in page.
-4. testing: you have to submit at least 10 backend tests.
+2. back end: supporting routes, db and middleware.
+3. front end: profile page, sign up page, and sign in page.
+4. backend testing: you have to submit at least 10 backend tests.
 
 ## Prerequisite reading:
 1. Read about testing, user administration, and authentication at https://fullstackopen.com/en/part4/.
@@ -31,15 +31,17 @@ Remove the next-auth lib from the project. (** See what was added to support it 
 
 ### Database
 We need to store the password hashes. you're free to design the database schema as you wish. At least two possible options (you can come up with more):
- 1. the least changes would be to use the existing schemas to store passwords as well.
+ 1. the least changes would be to use the existing user table to store passwords as well.
  2. if you prefer working with Mongo, and be aligned with fullstackopen examples, you can change your code to store users and their passwords there.
     
 ### API routes
 1. implement a route that adds a new user.
-2. implement a login of an existing user.
+2. implement a route that logs in an existing user.
+You can implement extra routes as needed.
 
 ### middleware
-Implement a middleware to verify a user is logged in, before reaching the post/publish/profile API endpoints.
+The post/publish/profile 
+Implement a middleware to verify a user is logged in, before reaching the API endpoints which are user specific: posting, publish, see user profile, etc. 
 
 
 ## Implementation - Front
@@ -77,8 +79,8 @@ Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-you
     1. nonExistingId() will return a non-existing database id, instead of writing the actual code to generate that id.
 4. One comfortable way to write a single test is the "given-when-then" convention:
     1. given that a user is in the database, and a correct auth request is made, then success is expected.
-    2. given an existing post id, a delete request is sent to /api/post/:id, then I expect the post to be returned.
-    3. A matter of taste: if "then" expects more than one result, separate each one to a different test, (at the cost of code duplication, but can use a mutual code block of beforeEach).
+    2. given an existing post id, a delete request is sent to /api/post/:id, then the post should no longer be in the database.
+    3. A matter of taste: if the "then" clause expects more than one result, separate each one to a different test, and don't have one long test with multiple expected results. (at the cost of code duplication, but "beforeEach" can save code duplication here.).
 
 
 ### Grading process:
