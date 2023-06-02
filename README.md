@@ -74,7 +74,9 @@ Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-you
 2. The three laws of TDD:
     1. You may not write production code until you have written a failing unit test.
     2. You may not write more of a unit test than is sufﬁcient to fail, and not compiling is failing.
-    3. You may not write more production code than is sufﬁcient to pass the currently failing test.
+    3. You may not write more production code than is sufﬁcient to pass the currently failing test. 
+    
+    These three laws lock you into a cycle that is perhaps thirty seconds long. The tests and the production code are written together, with the tests just a few seconds ahead of the production code.
 3. building a domain-speciﬁc language for your tests. Rather than using the APIs that programmers use to manipulate the system, build up a set of functions and utilities that make use of those APIs and that make the tests more convenient to write and easier to read. For example:
     1. nonExistingId() will return a non-existing database id, instead of writing the actual code to generate that id.
 4. One comfortable way to write a single test is the "given-when-then" convention:
