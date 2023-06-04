@@ -30,8 +30,8 @@ This task's main goal is to add profiles to our posts website; the task is split
 Remove the next-auth lib from the project. (** See what was added to support it here: https://next-auth.js.org/)
 
 ### Database
-We need to store the password hashes. you're free to design the database schema as you wish. At least two possible options (you can come up with more):
- 1. the least changes would be to use the existing user table to store passwords as well.
+We need to store the password hashes. you're free to design the database schema as you wish. There are at least two possible options (you can come up with more):
+ 1. Use the existing user table to store passwords as well.
  2. if you prefer working with Mongo, and be aligned with fullstackopen examples, you can change your code to store users and their passwords there.
     
 ### API routes
@@ -40,8 +40,7 @@ We need to store the password hashes. you're free to design the database schema 
 You can implement extra routes as needed.
 
 ### middleware
-The post/publish/profile 
-Implement a middleware to verify a user is logged in, before reaching the API endpoints which are user specific: posting, publish, see user profile, etc. 
+Implement a middleware to verify a user is logged in, before reaching the API endpoints which are meant for authenticated users. For example: posting, publishing, user profile, etc. 
 
 
 ## Implementation - Front
@@ -52,13 +51,14 @@ Implement a middleware to verify a user is logged in, before reaching the API en
     4. unauthenticated users can still see the public feed.
 2. create a profile page for authenticated users. link: on the main page of the app.
     1. Clicking on it, shows a page with the details of the current user.
-3. for simplicity, the username, password, and email cannot be changed after user creation, and we don't support deletion.
+3. for simplicity, the username, password, and email cannot be changed after user creation, and we don't support user deletion.
 
 ## Implementation - front&back end error handling:
 1. If a user inserted a bad input in the form, it should be verified in the front end.
-2. The backend should send proper status codes (200- ok, 204- success and no content, 201- created, 400 bad request, 403-forbidden, 404- doesn't exist, 500- internal server error, and others) and the frontend should show a proper message interpreting those. For example:
+2. The backend should send proper status codes (200- ok, 204- success and no content, 201- created, 400 bad request, 403-forbidden, 404- doesn't exist, 500- internal server error, and maybe others). The frontend should show the user matching, informative messages. interpreting those. For example:
     1. A user cannot create an existing other user's email address: this will return a bad request code.
-    2. A user must enter an email, it can be verified at the front end.    
+    2. A user must enter an email and cannot leave the input empty, it can be verified at the front end.
+    3. If a user inserts an incorrect username/password combo, "incorrect credentials" should show on screen.
 
 ### Bonus: up to 10 points ("magen" for the exercises) for extra features:
 1. Let the user add a profile picture. Save it to Cloudinary.
@@ -68,10 +68,10 @@ Implement a middleware to verify a user is logged in, before reaching the API en
 ### Tips - debugging:
 Try the [vscode debugger for nextjs.](https://nextjs.org/docs/pages/building-your-application/configuring/debugging), it's easy to install and use most of the time, but sometimes the breakpoints don't work.
 
-### Tips - Test Driven Development ("Clean Code"/ Robert C. Martin, Chapter 9, unit tests)
-1. You're invited to take this exercise as an opportunity to practice TDD, which will make you a better programmer.
-    1. But you *have* to submit a set of tests, even if not using TDD.
-2. The three laws of TDD:
+### Tips - Test Driven Development 
+1. This exercise is an opportunity to practice TDD, which will make you a better programmer.
+    1. NB: You *have* to submit a set of tests, even if not using TDD.
+2. The three laws of TDD: (Taken from "Clean Code"/ Robert C. Martin, Chapter 9, unit tests, production here means code related to the task itself)
     1. You may not write production code until you have written a failing unit test.
     2. You may not write more of a unit test than is sufﬁcient to fail, and not compiling is failing.
     3. You may not write more production code than is sufﬁcient to pass the currently failing test. 
