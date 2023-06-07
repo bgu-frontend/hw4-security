@@ -24,6 +24,7 @@ This task's main goal is to add profiles to our posts website; the task is split
 1. Read about testing, user administration, and authentication at https://fullstackopen.com/en/part4/.
 2. Read about bcrypt format: https://en.wikipedia.org/wiki/Bcrypt.
 3. Read about JSON Web Token: https://jwt.io/introduction.
+4. Read about implementing middleware in Next.js: https://nextjs.org/docs/pages/building-your-application/routing/middleware.
 
 ## Implementation - backend
 ### Library
