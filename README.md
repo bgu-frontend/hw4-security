@@ -31,9 +31,11 @@ This task's main goal is to add profiles to our posts website; the task is split
 Remove the next-auth lib from the project. (** See what was added to support it here: https://next-auth.js.org/)
 
 ### Database
-We need to store the password hashes. you're free to design the database schema as you wish. There are at least two possible options (you can come up with more):
- 1. Use the existing user table to store passwords as well.
+We need to store the password hashes. you're free to design/move the users database schema as you wish. There are at least two possible options (you can come up with more):
+ 1. Use the existing prisma user table to store passwords as well.
  2. if you prefer working with Mongo, and be aligned with fullstackopen examples, you can change your code to store users and their passwords there.
+
+In any case, the posts should stay at the Prisma db.
     
 ### API routes
 1. implement a route that adds a new user.
@@ -47,7 +49,7 @@ Implement a middleware to verify a user is logged in, before reaching the API en
 ## Implementation - Front
 1. for unauthenticated users:
     1. create a "sign in" page: where a user can create an account.
-    2. each user must have a username, password, email (unique identifier), and name. (Bonus: a photo, see below).
+    2. each user must have a username (fix: assume username unique identifier, won't be checked), password, email (unique identifier), and name. (Bonus: a photo, see below).
     3. create a  "log in" page with username/password.
     4. unauthenticated users can still see the public feed.
 2. create a profile page for authenticated users. link: on the main page of the app.
