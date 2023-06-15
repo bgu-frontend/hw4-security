@@ -3,7 +3,7 @@
 2. Grades: code part: 70%, questions: 30%.
 3. Your submitted git repo should be *private*, please make barashd@post.bgu.ac.il a collaborator.
 5. Deadline: 13/06/2023, end of day.
-6. Additionally, solve the questions in [will be filled later](https://www.notexists.bgu.ac.il/).
+6. Additionally, solve the questions in [link]([https://www.notexists.bgu.ac.il/](https://docs.google.com/forms/d/e/1FAIpQLSfw-8MCLhnovDPNXt5hsBYmtV8-aXtKX80x-KRSJ9EpdknJ_A/viewform?usp=sf_link)).
 7. To submit, fill in repository details in the following Moodle (https://moodle.bgu.ac.il/moodle/mod/questionnaire/view.php?id=2472729).
 8. in Atlas: Set the allowed IP addresses to 'all' (0.0.0.0).
 9. Download the final submitted version to a new dir and make sure it installs and runs correctly, preferably on a fresh machine.
