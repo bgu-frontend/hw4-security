@@ -46,7 +46,7 @@ Hosting on Vercel should be straightforward by following the guide above. notice
 
 
 ## Implementation - testing
-Use the Cypress guide to write 5 e2e or component tests for your app. The test-driven design tips are included with [hw3](https://github.com/bgu-frontend/hw3-profiles/blob/main/README.md).
+Use the Cypress guide to write 5 tests. They can be End to End (E2E) or component tests. The test-driven design tips are included with [hw3](https://github.com/bgu-frontend/hw3-profiles/blob/main/README.md).
 
 ### Related reading:
 1. [Testing end-to-end (e2e) using Cypress](https://nextjs.org/docs/pages/building-your-application/optimizing/testing#cypress) 
