@@ -33,7 +33,7 @@ If you were using local storage in hw3:
 
 
 ### Related reading:
-1. [HTML5, Local Storage, and XSS 2010!](http://michael-coates.blogspot.com/2010/07/html5-local-storage-and-xss.html)
+1. [HTML5, Local Storage, and XSS (from 2010!)](http://michael-coates.blogspot.com/2010/07/html5-local-storage-and-xss.html)
 2. [How to protect a Next.js app from CSRF attacks](https://blog.logrocket.com/protecting-next-js-apps-CSRF-attacks/).
 3. [XSS, react sanitization, HTTP only cookies](https://fullstackopen.com/en/part5/login_in_frontend#a-note-on-using-local-storage)
 4. [Optional read about cross-site scripting via file upload](https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/cross-site-scripting-via-file-upload/)
