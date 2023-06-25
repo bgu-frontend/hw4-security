@@ -2,7 +2,7 @@
 1. Submission is in pairs, but it's better for practice if you start alone.
 2. Grades: code part: 70%, questions: 30%.
 3. Your submitted git repo should be *private*, please make barashd@post.bgu.ac.il a collaborator.
-5. Deadline: end of exams period.
+5. Deadline: end of exams period (update: 5/8 end of day).
 6. Additionally, solve the questions in [tbd].
 7. To submit, fill in repository details in the following Moodle [link](https://moodle.bgu.ac.il/moodle/mod/questionnaire/view.php?id=2480698).
 8. in Atlas: Set the allowed IP addresses to 'all' (0.0.0.0).
