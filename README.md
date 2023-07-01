@@ -3,7 +3,7 @@
 2. Grades: code part: 70%, questions: 30%.
 3. Your submitted git repo should be *private*, please make barashd@post.bgu.ac.il a collaborator.
 5. Deadline: end of exams period (update: 5/8 end of day).
-6. Additionally, solve the questions in [tbd].
+6. Additionally, solve the questions in [link](https://forms.gle/B9WMtNB6WvLgUqqN8).
 7. To submit, fill in repository details in the following Moodle [link](https://moodle.bgu.ac.il/moodle/mod/questionnaire/view.php?id=2480698).
 8. in Atlas: Set the allowed IP addresses to 'all' (0.0.0.0).
 9. Download the final submitted version to a new dir and make sure it installs and runs correctly, preferably on a fresh machine.
