@@ -23,7 +23,7 @@ For this exercise, we implement an attack/defense combo for CSRF.
 
 If you were using cookies in hw3:
 
-1. Follow through the Logrocket website above, and make a version of the code that enables a CSRF attack. commit the code with the message "vulnerable site". If you used local storage for user authentication. 
+1. Follow through the Logrocket website above, and make a version of the code that enables a CSRF attack. commit the code with the message "vulnerable site".
 2. Implement the attack, make sure it works, and document the details in a "CSRF_readme.txt" file of how to run the malicious script.
 3. then implement the protection. make sure the attack now fails.
 
