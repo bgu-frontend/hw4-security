@@ -52,7 +52,7 @@ Use the Cypress guide to write 5 tests. They can be End to End (E2E) or componen
 3. Suggestion: start by finding a Facebook-like clone example online.
     1. An inspiring [youtube tutorial](https://youtu.be/ytkG7RT6SvU?t=15312) of building a Twitter clone, including tailwind, with GitHub links to the full project below.
 
-## Bonus (Magen), 15 points: Hosting on Vercel, moving to HTTPS 
+## Bonus (Magen), 10 points: Hosting on Vercel, moving to HTTPS 
 Hosting on Vercel (Use the free hobby plan), start by following the guide below. notice that HTTPS protocol, including its requirements, is provided by the platform. 
 Add the deployed app details to your Moodle submission, under extra info.
 
