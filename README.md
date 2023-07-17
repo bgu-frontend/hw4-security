@@ -8,12 +8,12 @@
 8. in Atlas: Set the allowed IP addresses to 'all' (0.0.0.0).
 9. Download the final submitted version to a new dir and make sure it installs and runs correctly, preferably on a fresh machine.
 10. Start from your previous, hw3-profiles, submission.
-11. Make sure you fill and submit "CSRF_readme.txt".
+11. Make sure you fill in and submit "CSRF_readme.txt".
 
 ## Goals
 1. Add security layers.
 2. Hosting: Move the dev projects to a public host.
-3. Testing: End to end testing.
+3. Testing: End-to-end testing.
 4. Optionally polishing the website using tailwind.
 Some of the material will be given in the TA session.
 
@@ -29,7 +29,7 @@ If you were using cookies in hw3:
 
 If you were using local storage in hw3:
 
--Implementing an attack here is more challenging. I suggest changing the authentication method to cookies. But, if you like to avoid moving to cookies, and implmenet an attack/protection combo, that will be acceptable.
+-Implementing an attack here is more challenging. I suggest changing the authentication method to cookies. But, if you like to avoid moving to cookies, and implement an attack/protection combo, that will be acceptable.
 
 
 ### Related reading:
@@ -37,12 +37,6 @@ If you were using local storage in hw3:
 2. [How to protect a Next.js app from CSRF attacks](https://blog.logrocket.com/protecting-next-js-apps-CSRF-attacks/).
 3. [XSS, react sanitization, HTTP only cookies](https://fullstackopen.com/en/part5/login_in_frontend#a-note-on-using-local-storage)
 4. [Optional read about cross-site scripting via file upload](https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/cross-site-scripting-via-file-upload/)
-
-## Implementation - Hosting on Vercel, moving to HTTPS
-Hosting on Vercel should be straightforward by following the guide above. notice that HTTPS protocol, including its requirements, is provided by the platform. Use the free hobby plan.
-
-### Related reading:
-[Deploy next.js to Vercel](https://nextjs.org/learn/basics/deploying-nextjs-app)
 
 
 ## Implementation - testing
@@ -52,12 +46,19 @@ Use the Cypress guide to write 5 tests. They can be End to End (E2E) or componen
 1. [Testing end-to-end (e2e) using Cypress](https://nextjs.org/docs/pages/building-your-application/optimizing/testing#cypress) 
 2. [e2e and component tests](https://docs.cypress.io/guides/core-concepts/testing-types)
 
-### Bonus, 15 points: polish your website for production with tailwind:
+### Bonus (Magen), 15 points: polish your website for production with tailwind:
 1. [installation](https://nextjs.org/docs/app/building-your-application/styling/tailwind-css)
 2. skim read through [core tailwind concepts](https://tailwindcss.com/docs/utility-first)
 3. Suggestion: start by finding a Facebook-like clone example online.
-    1. An inspriring [youtube tutorial](https://youtu.be/ytkG7RT6SvU?t=15312) of building twitter clone including tailwind, with github links to the full project below.
-    
+    1. An inspiring [youtube tutorial](https://youtu.be/ytkG7RT6SvU?t=15312) of building a Twitter clone, including tailwind, with GitHub links to the full project below.
+
+## Bonus (Magen), 15 points: Hosting on Vercel, moving to HTTPS 
+Hosting on Vercel (Use the free hobby plan), start by following the guide below. notice that HTTPS protocol, including its requirements, is provided by the platform. 
+Add the deployed app details to your Moodle submission, under extra info.
+
+### Related reading:
+[Deploy next.js to Vercel](https://nextjs.org/learn/basics/deploying-nextjs-app)
+
 
 ### Grading process:
 1. Clone your submitted repo. 
@@ -65,7 +66,7 @@ Use the Cypress guide to write 5 tests. They can be End to End (E2E) or componen
     1. Security mechanisms.
     2. Tests.
     3. Onliny hosting.
-    4. security bonus part, if exists: I'll git-check-out the code version to before and after security was implemented, and check that the attack script is successful/failing in the matching cases.
+    4. security bonus part, if exists: I'll git-check-out the code version before and after security was implemented, and check that the attack script is successful/failing in the matching cases.
     
 
 
